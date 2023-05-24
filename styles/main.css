@@ -1,0 +1,116 @@
+:root {
+  --degradado-onara: linear-gradient(to right, #9f0000 0%, #9f0000 43.5%, #afaf00 44.5%, #afaf00 55.5%, #801080 56.5%, #801080 100%);
+  --h-background: #333;
+  --h-shadow-background: #222;
+  --h-light-background: #444;
+  --li-after-width:3px;
+  --li-after-height:80px;
+}
+body {
+  font-family: 'gill-sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 32em;
+}
+
+header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  font-size: large;
+  background-color: #333;
+  padding: 1.5em;
+  margin-bottom: 0;
+  border-radius: 0.2em;
+}
+
+header h1 {
+  
+  font-family: "Lobster", 'gill-sans', sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  color: #fff;
+  margin: 0;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: transparent 0.08em;
+  background: var(--degradado-onara);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+nav ul li {
+  vertical-align:middle; 
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  vertical-align: middle;
+}
+
+
+nav ul li a {
+  padding: 0.4em;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.75em;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+#contenido {
+
+  position: relative;
+  top:8em;
+  text-align: center;
+  margin: 1px;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+#contenido h1 {
+  font-size: 2em;
+  color: #fff;
+  margin-top:px0;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 1em;
+  margin: 0;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: -22px;
+  transform: translateY(-40%);
+  width: var(--li-after-width);
+  height: var(--li-after-height);
+  background-image: radial-gradient(circle at center, var(--h-shadow-background) 0%, var(--h-shadow-background) 50%, var(--h-background) 50%, var(--h-background) 80%);
+}
+
+nav ul li a:hover{
+    background-color: var(--h-light-background);
+    border-radius: 10px; /* Ajusta el valor según tus necesidades */
+  }
+  
+  iframe {
+    overflow: hidden;
+  }
