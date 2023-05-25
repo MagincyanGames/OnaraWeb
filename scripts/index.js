@@ -1,11 +1,8 @@
-function loadForm()
+function load()
 { 
     var descripcionSection = document.getElementById('descripcion');
   descripcionSection.style.display = 'none';
   
-  // Mostrar el iframe
-  var iframe = document.getElementById('content-frame');
-  iframe.style.display = 'block';
   
   var title = document.getElementById('titulo');
   title.style.display="none";
@@ -52,11 +49,29 @@ function loadForm()
 
 }
 
+function loadForm()
+{
+  load();
+  // Mostrar el iframe
+  var iframe = document.getElementById('formulario');
+  iframe.style.display = 'block';
+}
+
+function loadOnara()
+{
+  load();
+  // Mostrar el iframe
+  var iframe = document.getElementById('onaras');
+  iframe.style.display = 'block';
+}
+
+
 function hideForm()
 {
-    var iframe = document.getElementById('content-frame');
+    var iframe = document.getElementById('formulario');
     iframe.style.display = 'none';
-
+    var iframe = document.getElementById('onaras');
+    iframe.style.display = 'none';
     var descripcionSection = document.getElementById('descripcion');
     descripcionSection.style.display = 'block';
 

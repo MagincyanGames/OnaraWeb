@@ -114,3 +114,22 @@ nav ul li a:hover{
   iframe {
     overflow: hidden;
   }
+
+  table#onaralist tr td{
+    text-align: center;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  table#onaralist tr th{
+    font-size: 1.5em;
+    
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+
+  table#allList{
+    width: 100%;
+  }
