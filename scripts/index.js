@@ -1,6 +1,7 @@
 function load()
 { 
-    var descripcionSection = document.getElementById('descripcion');
+  hideForm();
+  var descripcionSection = document.getElementById('descripcion');
   descripcionSection.style.display = 'none';
   
   
