@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onara - Equipos</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 4vh;
+            margin-bottom: 50px;
+            padding-bottom: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+            font-size: 1.5vh; /* Ajusta el tamaño del texto según tus necesidades */
+        }
+
+        /* Estilos específicos */
+        .contenido {
+            max-width: 900px; /* Ajusta el valor según tus necesidades */
+
+            color: #fff;
+            display: grid;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 100fr));
+            gap: 20px;
+            max-width: 800px; /* Ancho máximo del contenedor */
+            margin: 0 auto; /* Centrar el contenedor en la página */
+            align-content: flex-start; /* Agrega esta propiedad */
+            justify-items: center;
+        }
+
+        .team {
+            position: relative;
+
+            background-color: var(--h-background);
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;  
+            width: auto;
+
+            height: auto;
+            box-shadow: none;
+
+        }
+
+        .team img {
+            
+            padding-bottom: 10px;
+            width: 15vh;
+            height: auto;
+        }
+
+        .team-name {
+            font-size: 2vh;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+
+        .team-link {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Estilos para el menú contextual */
+        .team-context-menu {
+            width: 100%;
+            display: none;
+            position: absolute;
+            background-color: var(--h-background);
+            color: #fff;
+            border-radius: 5px;
+            white-space: nowrap;
+            list-style-type: none;
+          }
+          
+        .team-context-menu li {
+
+            padding: 10px;
+        }
+        .team:hover,
+        .team:hover .team-context-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Actual</h1>
+    <section class="contenido">
+        <div class="team">
+            <a class="team-link">
+                <img src="../images/imperio_asiático_flag.png" alt="Bandera Imperio Asiático">
+                <div>
+                    <h2 class="team-name">Imperio Asiático</h2>
+                </div>
+                <ul class="team-context-menu">
+                    <li>Chino</li>
+                </ul>
+            </a>
+        </div>
+
+        <div class="team">
+            <a class="team-link">
+                <img src="../images/rep_taderia_flag.png" alt="Bandera República Taderiana">
+                <div>
+                    <h2 class="team-name">Rep. Taderiana</h2>
+                </div>
+                <ul class="team-context-menu">
+                    <li>Tueder</li>
+                </ul>
+            </a>
+        </div>
+
+        <div class="team">
+            <a class="team-link">
+                <img src="../images/ajolia_flag.png" alt="Bandera Ajolia">
+                <div>
+                    <h2 class="team-name">Ajolia</h2>
+                </div>
+                <ul class="team-context-menu">
+                    <li>Magic</li>
+                    <li>Sans</li>
+                </ul>
+            </a>
+        </div>
+        <!-- Agrega aquí más equipos siguiendo la estructura de cuadrícula -->
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Antiguo</h1>
+    <section class="contenido">
+        <div class="team">
+            <a class="team-link">
+                <img src="../images/sansirium.png" alt="Bandera Sansirium">
+                <div>
+                    <h2 class="team-name">Sansirium</h2>
+                </div>
+                <ul class="team-context-menu">
+                    <li>Sans</li>
+                </ul>
+            </a>
+        </div>
+        <div class="team">
+            <a class="team-link">
+                <img src="../images/rep_magica_flag.png" alt="Bandera República Mágica">
+                <div>
+                    <h2 class="team-name">República Mágica</h2>
+                </div>
+                <ul class="team-context-menu">
+                    <li>Magic</li>
+                </ul>
+            </a>
+        </div>
+        <div class="team">
+            <a class="team-link">
+                <img src="../images/puerca_alianza_flag.png" alt="Bandera Puerca Alianza">
+                <div>
+                    <h2 class="team-name">Puerca Alianza</h2>
+                    <ul class="team-context-menu">
+                        <li>Magic</li>
+                        <li>Lucca</li>
+                        <li>Sukii</li>
+                    </ul>
+                </div>
+                
+            </a>
+        </div>
+    </section>
+
+    <script>
+        const teamLinks = document.querySelectorAll('.team');
+
+        teamLinks.forEach((teamLink) => {
+        
+        teamLink.addEventListener('mouseover', () => {
+            
+        const team = teamLink.closest('.team');
+        const contextMenu = team.querySelector('.team-context-menu');
+
+            contextMenu.style.display = 'inline-block';
+            contextMenu.style.position = 'none';
+            contextMenu.style.width = getComputedStyle(team).width;
+            contextMenu.style.padding = getComputedStyle(team).padding;
+            contextMenu.style.margin = getComputedStyle(team).margin;
+            
+        });
+
+        teamLink.addEventListener('mouseout', () => {
+            
+        const team = teamLink.closest('.team');
+        const contextMenu = team.querySelector('.team-context-menu');
+            contextMenu.style.display = 'none';
+        });
+        });
+
+    </script>
+</body>
+</html>
