@@ -51,7 +51,10 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center; /* Añade esta propiedad para centrar verticalmente los elementos */
   margin-top: 1em;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 nav ul li {

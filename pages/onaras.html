@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
         h1{
-            font-size: 4em;
+            font-size: 4vh;
             margin-bottom:50px;
             padding-bottom: 0;
         }
@@ -17,7 +17,7 @@
             margin: 0;
             padding: 0;
             white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-            font-size: 14px; /* Ajusta el tamaño del texto según tus necesidades */
+            font-size: 1.5vh; /* Ajusta el tamaño del texto según tus necesidades */
 
           }
         /* Estilos específicos */
@@ -26,13 +26,12 @@
             color: #fff;
             display: grid;
             flex-wrap: wrap;
-            justify-content: flex-start;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(100px, 100fr));
             gap: 20px;
-            
             max-width: 800px; /* Ancho máximo del contenedor */
             margin: 0 auto; /* Centrar el contenedor en la página */
-
+            align-content: flex-start; /* Agrega esta propiedad */
+            justify-items: center
         }
         .team {
             background-color: var(--h-background);
@@ -43,15 +42,15 @@
             align-items: center;
             text-align: center;
             margin: 0 auto;
-            flex-basis: 0.01%; /* Establece el tamaño máximo deseado */
-             /* Establece el ancho máximo deseado */
+            width: 17vh;
+            height: auto;
         }
         .team img {
-            max-width: 100%;
+            width: 15vh;
             height: auto;
         }
         .team-name {
-            font-size: 24px;
+            font-size: 2vh;
             font-weight: bold;
             margin: 10px 0;
         }
@@ -59,6 +58,7 @@
             color: #fff;
             text-decoration: none;
         }
+
           
     </style>
 </head>
