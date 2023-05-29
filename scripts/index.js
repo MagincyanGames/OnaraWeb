@@ -58,11 +58,11 @@ function loadForm()
   iframe.style.display = 'block';
 }
 
-function loadOnara()
+function loadTeams()
 {
   load();
   // Mostrar el iframe
-  var iframe = document.getElementById('onaras');
+  var iframe = document.getElementById('teams');
   iframe.style.display = 'block';
 }
 
@@ -71,7 +71,7 @@ function hideForm()
 {
     var iframe = document.getElementById('formulario');
     iframe.style.display = 'none';
-    var iframe = document.getElementById('onaras');
+    var iframe = document.getElementById('teams');
     iframe.style.display = 'none';
     var descripcionSection = document.getElementById('descripcion');
     descripcionSection.style.display = 'block';
