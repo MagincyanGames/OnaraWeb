@@ -110,10 +110,6 @@ nav ul li a:hover{
     background-color: var(--h-light-background);
     border-radius: 10px; /* Ajusta el valor según tus necesidades */
   }
-  
-  iframe {
-    overflow: hidden;
-  }
 
   table#onaralist tr td{
     text-align: center;

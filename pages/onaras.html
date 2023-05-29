@@ -1,148 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onara</title>
+    <title>Onara - Equipos</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    
+    <style>
+        h1{
+            font-size: 4em;
+            margin-bottom:50px;
+            padding-bottom: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+            font-size: 14px; /* Ajusta el tamaño del texto según tus necesidades */
+
+          }
+        /* Estilos específicos */
+        .contenido {
+            
+            color: #fff;
+            display: grid;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+            
+            max-width: 800px; /* Ancho máximo del contenedor */
+            margin: 0 auto; /* Centrar el contenedor en la página */
+
+        }
+        .team {
+            background-color: var(--h-background);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            flex-basis: 0.01%; /* Establece el tamaño máximo deseado */
+             /* Establece el ancho máximo deseado */
+        }
+        .team img {
+            max-width: 100%;
+            height: auto;
+        }
+        .team-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .team-link {
+            color: #fff;
+            text-decoration: none;
+        }
+          
+    </style>
 </head>
 <body>
-    <table id="allList">
-        <tr>
-            <td>
-                <table id="onaralist">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Actual</h1>
+    <section class="contenido">
+        
+
+        <div class="team" >
+            <a class="team-link" >
+            <img src="../images/imperio_asiático_flag.png" alt="Bandera Imperio Asiático" > 
+                <div>
+                    <h2 class="team-name">Imperio Asiático</h2>
+                    Chino
+                </div>
+            </a>
+        </div>
+
+        <div class="team" >
+            <a class="team-link" >
+            <img src="../images/rep_taderia_flag.png" alt="Bandera República Taderiana" > 
+                <div>
+                    <h2 class="team-name">Rep. Taderiana</h2>
+                    Tueder
+                </div>
+            </a>
+        </div>
+
+        <div class="team" >
+            <a class="team-link" >
+            <img src="../images/ajolia_flag.png" alt="Bandera Ajolia" > 
+                <div>
+                    <h2 class="team-name">Ajolia</h2>
+                    Magic, Sans
+                </div>
+            </a>
+        </div>
+        <!--<div class="team" >
+            <a class="team-link" href="./teams/aro.html">
+            <img src="../images/aro_flag.png" alt="Bandera ARO" > 
+                <div>
+                    <h2 class="team-name">Alianza de las Repúblicas Onara</h2>
+                    Tueder, Ajolia (Magic, Sans)
+                </div>
+            </a>
             
-            <tr>
-            <th>Nombre</th>
-            <th>Fecha de Integración</th>
-            <th>Región</th>
-            <th>Rama Onara</th>
-            </tr>
-            <tr>
-            <td>Popu</td>
-            <td>-</td>
-            <td>-</td>
-            <td>CAT</td>
-            </tr>
-            <tr>
-            <td>Magic</td>
-            <td>-</td>
-            <td>-</td>
-            <td>AND</td>
-            </tr>
-            <tr>
-            <td>Ciclo</td>
-            <td>-</td>
-            <td>-</td>
-            <td>MAD</td>
-            </tr>
-            <tr>
-            <td>Cofre</td>
-            <td>-</td>
-            <td>Popu</td>
-            <td>CAT</td>
-            </tr>
-            <tr>
-            <td>Chino</td>
-            <td>-</td>
-            <td>Ciclo</td>
-            <td>MAD</td>
-            </tr>
-            <tr>
-            <td>Tueder</td>
-            <td>8/12/20</td>
-            <td>Popu</td>
-            <td>CAT</td>
-            </tr>
-            <tr>
-            <td>Casperito</td>
-            <td>8/12/20</td>
-            <td>Popu</td>
-            <td>CAT</td>
-            </tr>
-            <tr>
-            <td>Sukii</td>
-            <td>23/12/20</td>
-            <td>Magic</td>
-            <td>AND</td>
-            </tr>
-            <tr>
-            <td>Lucca</td>
-            <td>23/12/20</td>
-            <td>Magic</td>
-            <td>AND</td>
-            </tr>
-            <tr>
-            <td>Lhextor</td>
-            <td>22/1/21</td>
-            <td>Popu</td>
-            <td>CAT</td>
-            </tr>
-            <tr>
-            <td>Angel</td>
-            <td>3/10/21</td>
-            <td>Magic</td>
-            <td>AND</td>
-            </tr>
-            <tr>
-            <td>Sans</td>
-            <td>16/10/21</td>
-            <td>Angel</td>
-            <td>AND</td>
-            </tr>
-            <tr>
-            <td>Sergi</td>
-            <td>13/2/22</td>
-            <td>Tueder</td>
-            <td>CAT</td>
-            </tr>
-            <tr>
-            <td>Mariu</td>
-            <td>22/9/22</td>
-            <td>Angel</td>
-            <td>AND</td>
-            </tr>
-            <tr>
-            <td>Mibu</td>
-            <td>7/12/22</td>
-            <td>Angel</td>
-            <td>AND</td>
-            </tr>
-            <tr>
-            <td>Stop</td>
-            <td>5/1/23</td>
-            <td>Lucca</td>
-            <td>AND</td>
-            </tr>
-            <tr>
-            <td>Yoos</td>
-            <td>7/3/23</td>
-            <td>Tueder</td>
-            <td>CAT</td>
-            </tr>
-                </table>
-            </td>
-            <td>
-                <div class="region-chart">
-                    <h2>Distribución por Región</h2>
-                    <div class="chart">
-                      <div class="chart-segment region1"></div>
-                      <div class="chart-segment region2"></div>
-                      <div class="chart-segment region3"></div>
-                      <div class="chart-label">Región 1</div>
-                      <div class="chart-label">Región 2</div>
-                      <div class="chart-label">Región 3</div>
-                    </div>
-                  </div>
-            </td>
-        </tr>
-    </table>
-    </div>
+        </div>-->
+        <!-- Agrega aquí más equipos siguiendo la estructura de cuadrícula -->
+    </section>
+    <br>
+    <br>
+    <br>
+    <h1>Antiguo</h1>
+    <section class="contenido">
+        <div class="team" >
+            <a class="team-link" >
+            <img src="../images/sansirium.png" alt="Bandera Sansirium" > 
+                <div>
+                    <h2 class="team-name">Sansirium</h2>
+                    Sans
+                </div>
+            </a>
+        </div>
+        <div class="team" >
+            <a class="team-link" >
+            <img src="../images/rep_magica_flag.png" alt="Bandera República Mágica" > 
+                <div>
+                    <h2 class="team-name">República Mágica</h2>
+                    Magic
+                </div>
+            </a>
+        </div>
+        <div class="team" >
+            <a class="team-link" >
+            <img src="../images/puerca_alianza_flag.png" alt="Bandera Puerca Alianza" > 
+                <div>
+                    <h2 class="team-name">Puerca Alianza</h2>
+                    Magic, Lucca, Sukii
+                </div>
+            </a>
+        </div>
+    </section>
     
-    
-  </body>
-  </html>
+</body>
 </html>
