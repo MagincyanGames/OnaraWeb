@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajolia</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-size: 1.75vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            gap: 25vh;
+        }
+
+        .image {
+            grid-column: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .details {
+            grid-column: 2;
+        }
+
+        h1 {
+            font-size: 4.5vh;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 3.5vh;
+            margin-bottom: 24px;
+        }
+        h4 {
+            font-size: 2.5vh;
+            margin-bottom: 24px;
+        }
+        h3 {
+            text-decoration: underline;
+            font-size: 2.5vh;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            font-size: 2vh;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="image">
+            
+            <h1>Ajolia</h1>
+            <img src="../../images/ajolia_flag.png" alt="Bandera Ajolia" width="200px">
+            <ul>
+                <li>Magic</li>
+                <li>Sans</li>
+                <li>Killer</li>
+            </ul>
+        </div>
+        <div class="details">
+            <h2>Historia</h2>
+            <h3>Onaracraft IV</h3>
+            <p>
+                Tras la explosion de la base de la puerca alianza, y que esta se mude, empiezan unos breves conflictos internos que hacen que Magic cree un nuevo estado entorno a Ajo, siendo este el inicio de Ajolia
+            </p>
+            <h3>Onaracraft V</h3>
+            <p>
+                Una vez se crea la ARO, Magic decidió empezar una costosa construcción de un nuevo templo que no llegaría a nada.
+            </p>
+
+            <h3>Onaracraft Alpha</h3>
+            <p>
+                La República Mágica y Sansirium se unirían creando así Ajolia, un pueblo que venera a Ajo.
+                <br>
+                Killer se uniría poco después.
+            </p>
+        </div>
+    </div>
 </body>
 </html>

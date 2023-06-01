@@ -9,22 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
         .contenedor-votaciones {
+            max-width: 900px; /* Ajusta el valor según tus necesidades */
+
             color: #fff;
             display: grid;
             flex-wrap: wrap;
-            justify-content: flex-start;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(100px, 100fr));
             gap: 20px;
-            margin: 0 0;
             max-width: 800px; /* Ancho máximo del contenedor */
-            
+            margin: 0 auto; /* Centrar el contenedor en la página */
+            align-content: flex-start; /* Agrega esta propiedad */
+            justify-items: center;
 
         }
         .element {
             background-color: var(--h-background);
             border-radius: 10px;
             padding: 20px;
-            display: flex;
+            display: inline-block;
             flex-direction: column;
             align-items: center;
             text-align: center;
@@ -35,7 +37,7 @@
         }
         .link {
             color: #fff;
-            text-decoration: none;
+            text-decoration: underline;
         }
         body {
             overflow: hidden;
@@ -59,10 +61,10 @@
 <body>
 
     <section>
-        <!--<section class="contenedor-votaciones">
-            <a class="link" href="https://my.forms.app/form/646b33574253e53acfddece9"><div>Cuarta Reforma <br> Onara</div></a>
-        </div>-->
-        No hay nada crack
+        <section class="contenedor-votaciones">
+        <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLScmKwIdiPBJakq2LczUNMJeXUQszyRgDeEP0HvANY7o_eZaaw/viewform?usp=sf_link"><div>Invitaciones a <br>Onaracraft</div></a>
+        <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSev1hMls0PZciuFVSN1dCZAHrGyY0Nvrtiu6fbJh5zHdrqtbg/viewform?usp=sf_link"><div>Inicio del <br>server</div></a>
+        </section>
     </section>
 </body>
 </html>
