@@ -18,7 +18,9 @@ body {
   justify-content: center;
   min-height: 32em;
 }
-
+a{
+  color: #c0a1e4;
+}
 header {
   z-index: 10;
   position: fixed;

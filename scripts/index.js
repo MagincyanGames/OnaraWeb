@@ -55,6 +55,7 @@ function loadForm()
   load();
   // Mostrar el iframe
   var iframe = document.getElementById('formulario');
+  iframe.src="./pages/form.html"
   iframe.style.display = 'block';
 }
 
@@ -63,6 +64,16 @@ function loadTeams()
   load();
   // Mostrar el iframe
   var iframe = document.getElementById('teams');
+  iframe.src="./pages/teams.html"
+  iframe.style.display = 'block';
+}
+
+function loadOnaras()
+{
+  load();
+  // Mostrar el iframe
+  var iframe = document.getElementById('onaras');
+  iframe.src="./pages/onaras.html"
   iframe.style.display = 'block';
 }
 

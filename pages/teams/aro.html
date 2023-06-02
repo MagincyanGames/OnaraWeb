@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARO - Alianza de las Repúblicas Onaras</title>
+    <title>Ajolia</title>
     <link rel="stylesheet" href="../../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <style>
         body {
             text-align: center;
-            vertical-align: middle;
             margin: 0;
             padding: 0;
-            font-size: 2vh;
+            font-size: 1.75vh;
             color: #fff;
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 150vh;
+            margin: 0 ;
             padding: 40px;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            gap: 40vh;
+        }
+
+        .main-content {
+            text-align: justify;
+        }
+
+        .sidebar {
+            text-align: center;
         }
 
         h1 {
-            font-size: 4.5vh;
+            font-size: 10vh;
             margin-bottom: 40px;
         }
 
@@ -31,32 +41,65 @@
             font-size: 3.5vh;
             margin-bottom: 24px;
         }
+
         h3 {
             text-decoration: underline;
             font-size: 2.5vh;
             margin-bottom: 20px;
             margin-top: 40px;
         }
+
         p {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+        }
+
+        li {
+            font-size: 2vh;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ARO - Alianza de las Repúblicas Onaras</h1>
-        <h2>Historia</h2>
-        <h3>Onaracraft V</h3>
-        <p>
-            La Alianza de las Repúblicas Onaras (ARO) es una coalición formada por la República Mágica, la República Taderiana y Sansirium.
-        </p>
-        <p>
-            Durante la Segunda Guerra de Dixel, la ARO se convirtió en la única facción que no sufrió daños significativos. Esto se debió a un pacto de cooperación y apoyo entre sus miembros, permitiéndoles enfrentar las amenazas de manera conjunta y eficiente.
-        </p>
-        <h3>Onaracraft Alpha</h3>
-        <p>
-            Sansirium, la República Mágica y Killer se unieron en Ajolia y volviendo a conformar la ARO.
-        </p>
+        
+        <div class="main-content">
+            
+            <h1 style="margin-bottom: 0vh;">ARO</h1>
+            <h2 style="margin-top: 0.5vh;margin-bottom: 8vh;">Alianza de las Repúblicas Onaras</h2>
+            <h2>Historia</h2>
+            <h3>Onaracraft V</h3>
+            <p>
+                La Alianza de las Repúblicas Onaras (ARO) es una coalición formada por la República Mágica, la República Taderiana y Sansirium.
+            </p>
+            <p>
+                Durante la Segunda Guerra de Dixel, la ARO se convirtió en la única facción que no sufrió daños significativos. Esto se debió a las buenas relaciones que tenían Tueder y el Team de Dixel.
+            </p>
+
+            <h3>Onaracraft Alpha</h3>
+            <p>
+                Sansirium, la República Mágica y Killer se unieron en <a href="./ajolia.html">Ajolia</a> y volviendo a conformar la ARO.
+            </p>
+        </div>
+
+        <div class="sidebar">
+            <h2>Bandera</h2>
+            <img src="../../images/aro_flag.png" alt="Bandera ARO" width="300vh">
+            <h2>Integrantes Acutales</h2>
+
+            <ul>
+                <li><a href="./ajolia.html"> Ajolia</a></li>
+                <li>Rep. Taderiana</li>
+            </ul>
+
+        </div>
     </div>
 </body>
 </html>
