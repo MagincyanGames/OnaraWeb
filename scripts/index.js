@@ -55,7 +55,7 @@ function loadForm()
   load();
   // Mostrar el iframe
   var iframe = document.getElementById('formulario');
-  iframe.src="./pages/form.html"
+  iframe.src="https://docs.google.com/forms/d/e/1FAIpQLSfLZV3QVg8vq46pNaSLOgvCW3gilSrmMqSVeYOEX2TSN9VZcA/viewform?usp=sf_link"
   iframe.style.display = 'block';
 }
 
