@@ -177,10 +177,13 @@
         });
 
         teamLink.addEventListener('mouseout', () => {
-            
-        const team = teamLink.closest('.team');
-        const contextMenu = team.querySelector('.team-context-menu');
-            contextMenu.style.display = 'none';
+                
+            const team = teamLink.closest('.team');
+            const contextMenu = team.querySelector('.team-context-menu');
+            forEach(a in contextMenu)
+            {
+                a.style.display = 'none';
+            }
         });
         });
 
