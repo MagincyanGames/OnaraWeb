@@ -1,0 +1,15 @@
+{
+  "contact": "AjoLia",
+  "templates": [
+    {
+      "name": "ajolia",
+      "sources": [
+        "https://i.imgur.com/STvJC2u.png"
+      ],
+      "x": 54,
+      "y": 260
+    }
+  ],
+  "whitelist": [],
+  "blacklist": []
+}
